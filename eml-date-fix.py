@@ -26,7 +26,7 @@ def eml_chg_date(folder):
     fixes the dates to one standard format: %d/%m/%Y %H:%M:%S %z
     and places them in (input)/fixed folder.
     """
-    x, y = 0, 0
+    y = 0, 0
     new_policy = email.policy.compat32.clone(raise_on_defect=True)
 
     if not glob.glob(args.eml_folder + "/*.eml"):
